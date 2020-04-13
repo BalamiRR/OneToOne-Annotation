@@ -15,13 +15,12 @@ public class ApplicationGoverment {
 			transaction = session.beginTransaction();
 			
 			Government government = new Government();
-			government.setGovernmentService("Laz Service");
-			government.setGovernmentName("Kutahya");
+			government.setGovernmentService("Antalya Service");
+			government.setGovernmentName("Antalya");
 			
 			GovernmentInfo governmentInfo = new GovernmentInfo();
-			governmentInfo.setGovernmentAddress("Calcali");
-			governmentInfo.setGovernmentParties("Laz Kong");
-			governmentInfo.setGovernment(government);
+			governmentInfo.setGovernmentAddress("Manavgat");
+			governmentInfo.setGovernmentParties("Antalyali Kong.");
 			
 			government.setGovernmentInfo(governmentInfo); //Bu ve altindakinin yerine asagidaki yorumlara
 			governmentInfo.setGovernment(government);//alinan kismiyla degistirebilirsin.
